@@ -1,0 +1,65 @@
+.artistDetails{
+margin:0 auto;
+margin-top:5rem;
+margin-left:5rem;
+display:grid;
+grid-template-columns:1fr 4fr;
+  
+}
+.artistCoverArt{
+	height: 10rem;
+	width: 10rem;
+	border-radius: 0.8rem;
+  border: 1px solid rgba(151,151,151,0.28);
+}
+
+.artistCoverArt>img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+.artistInfo {
+
+font-family: var(--font-display-3);
+font-size:4rem;
+padding-left:1rem;
+
+}
+.artistInfo h1{
+font-size:4rem;
+}
+.artistInfo h5{
+  font-size:1.8rem;
+  font-weight:500;
+  font-style:italic;
+  font-family:var(--default-font)
+}
+
+.infoTable {
+  font-family:var(--default-font);
+	width:90%;
+	border: 1px solid rgba(212,222,226,0.31);
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	box-shadow: var(	--box-shadow-1);
+    border-collapse: collapse;
+  margin:2.5rem auto;
+}
+
+.tableTitle{
+  text-align:left;
+  color:var(	--grey-color-1);
+  padding:2rem 3rem;
+  font-weight:500;
+  font-size:1.8rem;
+  border-bottom:1px solid #D4DEE2;
+}
+.infoTable td{
+  table-layout: fixed;
+  text-align:left;
+  padding:2rem 3rem;
+  font-size:1.4rem;
+  border-bottom:1px solid #D4DEE2;
+    border-collapse: collapse;
+
+}

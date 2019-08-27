@@ -1,1 +1,29 @@
-/**/
+//abstracts import
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+//base imports
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+/**DELETE THIS WHEN YOU GET STARTED */
+
+div.image-center {
+	height: 40rem;
+	width: 80rem;
+	margin: 0 auto;
+	& > img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+
+.contentWrapper{
+  display:grid;
+  grid-template-columns:1fr 3fr;
+}

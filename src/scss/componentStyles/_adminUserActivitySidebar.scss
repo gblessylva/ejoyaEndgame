@@ -1,0 +1,48 @@
+:root{ --main-color:red;
+      --default-box-sizing:border-box;
+      --default-border:1px solid #D4DEE2;
+
+
+}
+
+
+
+div.mainSideBar{
+  box-sizing:var(--default-box-sizing);
+  border:var(--default-border);
+}
+div.sidebarWrapper{
+  margin:0 auto;
+  text-align:center;
+}
+.mainLogo>img{
+	height: 27px;
+	width: 77px;
+  margin:31px auto;
+}
+
+.artistProfileImage{
+  margin:40px auto;
+	height: 77px;
+	width: 89px;
+	border: 1px solid rgba(151,151,151,0.28);
+	border-radius: 4px;
+}
+.artistProfileImage>img{
+  height:100%;
+  width:100%;
+}
+.artistName{
+  font-weight:bold;
+  font-size:22px;
+}
+
+.pendingRelease {
+  margin:0 auto;
+  margin-top:21px;
+	height: 48px;
+	//width: 208px;
+	border-radius: 4px;
+	background-color: #54DFC5;
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,0.11);
+}

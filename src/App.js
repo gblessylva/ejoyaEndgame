@@ -1,9 +1,11 @@
 import React from 'react';
-
+import Sidebar from "./components/sidebar/_adminUserActivitySidebar.js";
+import MainContent from "./components/mainContent/_adminUserActivity.js";
 export default () => (
 	<>
-		<div className="image-center">
-			<img src="/images/giphy.gif" alt="begin gif" />
+		<div className="contentWrapper">
+				<Sidebar/>
+			<MainContent/>		
 		</div>
 	</>
 );
