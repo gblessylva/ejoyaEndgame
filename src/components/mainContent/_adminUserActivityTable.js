@@ -4,10 +4,10 @@ class Table extends React.Component {
       super(props)
       this.state = {
          details: [
-            { info: 'Artist Name uploaded a song', date: "Sep 18, 2018", time: '11:26 PM' },
-            { info: 'Artist Name uploaded a song', date: "Sep 18, 2018 ", time: '11:26 PM'},
-            { info: 'Artist Name uploaded a song', date: "Sep 18, 2018", time: '11:26 PM'},
-            { info: 'Artist Name uploaded a song', date: "Sep 18, 2018 ", time: '11:26 PM' }
+            { info: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: "" },
+            { info: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: ""},
+            { info: 'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: ""},
+            { info:  'uploaded a song', date: "Sep 18, 2018 by 11:26 PM", region: "Adelaide, Astralia", CPS: ""}
          ]
       }
    }
@@ -21,12 +21,14 @@ class Table extends React.Component {
 
    renderTableData() {
       return this.state.details.map((detail, index) => {
-         const { info, date, time } = detail 
+         const cps=<div className="cps"/>
+         const { info, date, region } = detail 
          return (
             <tr className="otherInfo">
-               <td>{info}</td>
-               <td>on {date}</td>
-               <td>By {time}</td>
+               <td><span className="artistBold">Artist Name </span>{info}</td>
+               <td>{date}</td>
+               <td>{region}</td>
+               <td>{cps}</td>
             </tr>
          )
       })

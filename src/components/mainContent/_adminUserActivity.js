@@ -16,6 +16,7 @@ export default () => (
             <h1>Artist Name</h1>
             <h5>email@artist.com</h5>
           </div>
+          <button className="suspendButton">Suspend User</button>
         </div>
         <div className="description">
           <Table/>
