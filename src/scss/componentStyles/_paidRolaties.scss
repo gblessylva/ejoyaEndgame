@@ -1,0 +1,82 @@
+.artistDetails{
+  margin:0 auto;
+  margin-top:5rem;
+  margin-left:5rem;
+  display:grid;
+  width:90%;
+  grid-template-columns: 5fr 1fr;
+    
+  }
+  .artistCoverArt{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 0.8rem;
+    border: 1px solid rgba(151,151,151,0.28);
+  }
+  
+  
+  .artistInfo {
+  font-family: var(--font-display-3);
+  font-size:4rem;
+  padding-left:0.5rem;
+  
+  }
+  .artistInfo h1{
+  font-size:3.4rem;
+  font-weight: 300;
+  font-family:var(--font-display-2)
+  }
+  .artistInfo h5{
+    font-size:1.8rem;
+    font-weight:500;
+    font-style:italic;
+    font-family:var(--default-font)
+  }
+  
+  .infoTable {
+    font-family:var(--default-font);
+    width:90%;
+    box-sizing:border-box;
+    border: 1px solid rgba(212,222,226,0.31);
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: var(	--box-shadow-1);
+      border-collapse: collapse;
+    margin:2.5rem auto;
+  }
+  
+  .tableTitle{
+    text-align:left;
+    color:var(	--grey-color-1);
+    padding:1.5rem 2rem;
+    font-weight:500;
+    font-size:1.5rem;
+    border-bottom:1px solid #D4DEE2;
+  }
+  .infoTable td{
+    font-size:1.6rem;
+    text-align:left;
+    padding:2rem 2rem;
+    font-size:1.4rem;
+    border-bottom:1px solid #D4DEE2;
+     
+   
+    
+      
+  
+  }
+  .artistBold{
+    font-weight:bold;
+  
+  }
+  .darkBtn{
+    color:#000;
+    background:rgba(212,222,226,0.53);
+    font-size:1.2rem;
+    padding:0.3rem 0.5rem;
+    margin-left:0.2rem;
+    border-radius:0.3rem;
+  }
+  .italized{
+    font-style:italic;
+  }
