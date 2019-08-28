@@ -23,7 +23,7 @@ class Table extends React.Component {
 
    renderTableData() {
       return this.state.details.map((detail, index) => {
-         const playTime=<span class="darkBtn">3:50</span>
+         const playTime=<span className="darkBtn">3:50</span>
          const { name, artist, uploaded, plays, amount, region } = detail 
          return (
             <tr className="otherInfo">

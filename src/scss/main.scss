@@ -3,11 +3,23 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
+
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
 //base imports
 @import 'base/animations';
 @import 'base/base';
 @import 'base/typography';
 @import 'base/utilities';
+
+//shared components between components
+@import 'sharedcomponents/burger';
+
+//components
+@import 'components/dashboard';
+
 
 /**DELETE THIS WHEN YOU GET STARTED */
 
