@@ -4,11 +4,11 @@ class Table extends React.Component {
       super(props)
       this.state = {
          details: [
-            {name: 'Song Name',  artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia" },
-            {name: 'Song Name', artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia" },
-            {name: 'Song Name', artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia"},
-            {name: 'Song Name', artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia" },
-            {name: 'Song Name', artist:"Artist Name", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia" }
+            {name: 'Song Name',  artist:"Mike Abdul", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia" },
+            {name: 'Song Name', artist:"Onyeka", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia" },
+            {name: 'Song Name', artist:"Davido", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia"},
+            {name: 'Song Name', artist:"Olamide", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia" },
+            {name: 'Song Name', artist:"Phyno", uploaded: "Sep 18, 2018 by 11:26 PM", amount:"$20", plays: "3.4k", region: "Adelaide, Astralia" }
             
          ]
       }
@@ -27,9 +27,9 @@ class Table extends React.Component {
          const { name, artist, uploaded, plays, amount, region } = detail 
          return (
             <tr className="otherInfo">
-               <td ><span className="artistBold">{name} {playTime}</span></td>
+               <td ><span className="artistBold">{name} </span>{playTime}</td>
              
-               <td><span className="artistBold">{artist}</span></td>
+               <td> <span className="artistBold">{artist}</span></td>
                <td>{uploaded}</td>
                <td>{amount}</td>
                <td>{plays}</td>
