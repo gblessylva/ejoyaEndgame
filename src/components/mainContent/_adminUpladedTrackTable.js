@@ -31,7 +31,7 @@ class Table extends React.Component {
              
                <td> <span className="artistBold">{artist}</span></td>
                <td>{uploaded}</td>
-               <td>{amount}</td>
+               <td className="amount">{amount}</td>
                <td>{plays}</td>
                <td>{region}</td>
             </tr>
