@@ -30,8 +30,8 @@ class Table extends React.Component {
             <tr className="otherInfo">
                <td >{artistName} {description} <span className="italized" > name@mail.com</span></td>
                <td> {date}</td>
-               <td className="artistBold">{amount}</td>
-               <td>{region}</td>
+               <td className="centerBold">{amount}</td>
+               <td className="region">{region}</td>
             </tr>
          )
       })

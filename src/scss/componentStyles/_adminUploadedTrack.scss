@@ -1,95 +1,163 @@
 @import '../abstracts/mixins';
 
 .artistDetails{
-margin:0 auto;
-margin-top:5rem;
-margin-left:5rem;
-display:grid;
-width:90%;
-grid-template-columns: 5fr 1fr;
-@include respond(tab-land) {
-			margin-top:0;
-			margin-left:5em;
-      width:90%;
-      -webkit-overflow-scrolling: touch;
-        overflow-x: auto;
-        display: block;
-		}
-		@include respond(android-phone){
-			grid-template-columns:1fr;
-			width:100%;
-			text-align:center;
-      margin-left:0;
-      margin-top:1rem;
-      -webkit-overflow-scrolling: touch;
-        overflow-x: auto;
-        display: block;
-      
-		}
-  
-}
-.artistCoverArt{
-	height: 10rem;
-	width: 10rem;
-	border-radius: 0.8rem;
-  border: 1px solid rgba(151,151,151,0.28);
-}
-
-
-.artistInfo {
-font-family: var(--font-display-3);
-font-size:4rem;
-padding-left:0.5rem;
-
-}
-.artistInfo h1{
-font-size:3.4rem;
-font-weight: 300;
-font-family:var(--font-display-2);
-@include respond(android-phone){
-			
-      padding-bottom:2rem
-		}
-}
-.artistInfo h5{
-  font-size:1.8rem;
-  font-weight:500;
-  font-style:italic;
-  font-family:var(--default-font)
-}
-
-.infoTable {
-  font-family:var(--default-font);
-	width:90%;
-  box-sizing:border-box;
-	border: 1px solid rgba(212,222,226,0.31);
-	border-radius: 4px;
-	background-color: #FFFFFF;
-	box-shadow: var(	--box-shadow-1);
-    border-collapse: collapse;
-  margin:2.5rem auto;
-}
-
-.tableTitle{
-  text-align:left;
-  color:var(	--grey-color-1);
-  padding:1.5rem 2rem;
-  font-weight:500;
-  font-size:1.5rem;
-  border-bottom:1px solid #D4DEE2;
-}
-.infoTable td{
-  font-size:1.6rem;
-  text-align:left;
-  padding:2rem 2rem;
-  font-size:1.4rem;
-  border-bottom:1px solid #D4DEE2;
-   
- 
-  
+  margin:0 auto;
+  margin-left:4.2rem;
+  display:grid;
+  width:95%;
+  grid-template-columns: 5fr 1fr;
+  margin-top:-25rem;
+  @include respond(tab-land) {
+    margin-top:0;
+    margin-left:5em;
+    width:90%;
+  }
+  @include respond(android-phone){
+    grid-template-columns:1fr;
+    width:100%;
+    text-align:center;
+    margin-left:0;
+    margin-top:3rem;
+  }
     
-
+  }
+  .artistCoverArt{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 0.8rem;
+    border: 1px solid rgba(151,151,151,0.28);
+  }
+  
+  
+  .artistInfo {
+  font-family: var(--font-display-3);
+  font-size:4rem;
+  padding-left:0.5rem;
+  @include respond(android-phone){
+    padding-left:0;
+    text-align:center
+  }
+  
+  }
+  .description{
+  @include respond(phone) {
+    margin:0 auto;
+    width:90vw;
+    overflow:visible;
+  }
 }
+  .artistInfo h1{
+  font-size:3.4rem;
+  font-weight: 300;
+  padding-top:0;
+  margin-top:0;
+  font-family:var(--font-display-2);
+  padding-bottom:1rem;
+  }
+  .artistInfo h5{
+    font-size:1.8rem;
+    font-weight:500;
+
+    font-style:italic;
+    font-family:var(--default-font)
+  }
+  
+  .infoTable {
+    font-family:var(--default-font);
+    width:95%;
+    box-sizing:border-box;
+    border: 1px solid rgba(212,222,226,0.31);
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: var(	--box-shadow-1);
+      border-collapse: collapse;
+    margin:0 auto;
+    margin-top:4.2rem;
+     margin-left:4.2rem;
+     @include respond(tab-land) {
+      width:90vw;
+      margin-left:0;
+    }
+    @include respond(phone) {
+      margin:0 auto;
+      width:100vw;
+    }
+    @include respond(small-android){
+      margin:0 auto;
+      width:100%;
+      font-size:1.3rem
+    }
+  }
+  
+  .tableTitle{
+    text-align:left;
+    color:var(	--grey-color-1);
+    padding:1.5rem 2rem;
+    font-weight:500;
+    font-size:1.5rem;
+    border-bottom:1px solid #D4DEE2;
+    @include respond(tab-land) {
+      width:100%;
+      padding:1rem;
+    }
+    @include respond(phone) {
+      margin:0 auto;
+      width:100%;
+      padding:0.6rem;
+    }
+     @include respond(android-phone) {
+      margin:0 auto;
+      font-size:1.3rem;
+      width:100%;
+      
+    }
+    @include respond(small-android){
+      margin:0 auto;
+      width:100%;
+      font-size:1.3rem;
+      padding:.2rem;
+    }
+  }
+  .infoTable td{
+    font-size:1.6rem;
+    text-align:left;
+    padding:2rem 2rem;
+    font-size:1.4rem;
+    border-bottom:1px solid #D4DEE2;
+     
+    @include respond(tab-land) {
+      width:100%;
+      padding:.5rem;
+
+    }
+    @include respond(phone) {
+     
+      font-size:1.3rem;
+      width:100%;
+    }
+     @include respond(android-phone) {
+      margin:0 auto;
+      font-size:1.3rem;
+      width:100%;
+    }
+    @include respond(small-android){
+      margin:0 auto;
+      width:100%;
+      font-size:1.2rem;
+      padding:0.3rem;
+    
+    }
+  }    
+  
+  
+  .region { 
+    font-size:1.3rem;
+    
+  }
+  .centerBold{
+    font-weight:bold;
+    text-align:center;
+  }
 .artistBold{
   font-weight:bold;
 

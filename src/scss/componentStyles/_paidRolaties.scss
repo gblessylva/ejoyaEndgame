@@ -74,11 +74,17 @@
     margin-top:4.2rem;
      margin-left:4.2rem;
      @include respond(tab-land) {
-      width:100%;
+      width:90vw;
+      margin-left:0;
     }
     @include respond(phone) {
       margin:0 auto;
-      width:90%;
+      width:100%;
+    }
+    @include respond(small-android){
+      margin:0 auto;
+      width:100%;
+      font-size:1.3rem
     }
   }
   
@@ -95,7 +101,20 @@
     }
     @include respond(phone) {
       margin:0 auto;
-      width:90%;
+      width:100%;
+      padding:0.6rem;
+    }
+     @include respond(android-phone) {
+      margin:0 auto;
+      font-size:1.3rem;
+      width:100%;
+      
+    }
+    @include respond(small-android){
+      margin:0 auto;
+      width:100%;
+      font-size:1.3rem;
+      padding:.2rem;
     }
   }
   .infoTable td{
@@ -108,17 +127,33 @@
     @include respond(tab-land) {
       width:100%;
       padding:.5rem;
+
     }
     @include respond(phone) {
-      margin:0 auto;
-      width:90%;
+     
+      font-size:1.3rem;
+      width:100%;
     }
+     @include respond(android-phone) {
+      margin:0 auto;
+      font-size:1.3rem;
+      width:100%;
+    }
+    @include respond(small-android){
+      margin:0 auto;
+      width:100%;
+      font-size:1.2rem;
+      padding:0.3rem;
     
-      
+    }
+  }    
   
+  
+  .region { 
+    font-size:1.3rem;
+    
   }
-  .artistBold{
+  .centerBold{
     font-weight:bold;
-  
+    text-align:center;
   }
-  
