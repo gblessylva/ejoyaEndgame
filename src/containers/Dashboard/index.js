@@ -1,9 +1,9 @@
 import React, { Component, useContext } from 'react';
-import { NavLink, Route, BrowserRouter as Router } from 'react-router-dom';
+import { NavLink, Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import { FiArrowRightCircle, FiTarget } from 'react-icons/fi';
 import History from "../../components/mainContent/_transactionHistory";
-import Upload from "../../components/mainContent/_adminUploadedTrack";
-import Activity from "../../components/mainContent/_adminUserActivity";
+import Upload from "../../components/mainContent/_adminUploadedTrack.js";
+import Activity from "../../components/mainContent/_adminUserActivity.js";
 import Royalties from "../../components/mainContent/_paidRoyalties";
 
 
@@ -94,9 +94,13 @@ class DashBoardIndex extends Component {
 					<div>
 						
 						<Router>
-						
-						<Route exact path="/"  component={History}/>
-						<Route  path="../components/mainContent/_paidRoyalties"  component={Royalties} />
+						<Switch>
+						<Route exact path="/admin_transaction_history"  component={History}/>
+
+						<Route  path="/admin_users_activity"  component={Activity} />
+						<Route  path="/admin_paid_royalties"  component={Royalties} />
+						<Route  path="/admin_uploaded_tracks"  component={Upload} />
+					</Switch>
 					</Router>
 						</div>
 				</section>

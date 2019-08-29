@@ -1,3 +1,5 @@
+@import '../abstracts/mixins';
+
 .artistDetails{
 margin:0 auto;
 margin-top:5rem;
@@ -5,6 +7,25 @@ margin-left:5rem;
 display:grid;
 width:90%;
 grid-template-columns: 5fr 1fr;
+@include respond(tab-land) {
+			margin-top:0;
+			margin-left:5em;
+      width:90%;
+      -webkit-overflow-scrolling: touch;
+        overflow-x: auto;
+        display: block;
+		}
+		@include respond(android-phone){
+			grid-template-columns:1fr;
+			width:100%;
+			text-align:center;
+      margin-left:0;
+      margin-top:1rem;
+      -webkit-overflow-scrolling: touch;
+        overflow-x: auto;
+        display: block;
+      
+		}
   
 }
 .artistCoverArt{
@@ -24,7 +45,11 @@ padding-left:0.5rem;
 .artistInfo h1{
 font-size:3.4rem;
 font-weight: 300;
-font-family:var(--font-display-2)
+font-family:var(--font-display-2);
+@include respond(android-phone){
+			
+      padding-bottom:2rem
+		}
 }
 .artistInfo h5{
   font-size:1.8rem;
