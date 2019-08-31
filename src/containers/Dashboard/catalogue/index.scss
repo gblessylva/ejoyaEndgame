@@ -1,0 +1,117 @@
+.dashboard__content{
+  display:block !important;
+  margin-top:-1rem;
+  h2{
+          font-weight:normal;
+          font-size:3.2rem;
+          font-family:var(--font-display-2)
+        }
+  
+    .dashboardWrapper{
+    width:95%;
+    position:relative;
+    .goRight{
+      position:absolute;
+      padding:2rem;
+      top:15rem;
+      z-index:3;
+      border: 1px solid #DFE7EA;	
+      right:-8rem;
+      border-radius: 2px;	
+      opacity:0.3;
+      cursor:pointer;
+      background-color: #F2F5F6;
+      &:hover{
+        opacity:1;
+      }
+    }
+    
+      .dashHeading{
+        display:grid;
+        grid-template-columns:2fr 1fr;
+         
+        button.adminButton {
+          padding:1.7rem 4rem;
+          // float:right;
+          font-size:1.6rem;
+          font-weight:600;
+          cursor:pointer;
+          font-family:var(--default-font);
+          border: 0.1rem solid #D4DEE2;
+          border-radius: 0.4rem;
+          background-color: #000000;
+          color:#ffff;
+        }
+      }
+      .dashboard-card-wrapper{
+        margin-top:2rem;
+        width:150%;
+        display:grid;
+        overflow-x: scroll;
+        grid-template-columns: repeat( auto-fill, minmax(23rem, 1fr) );
+        .dashboard-card{
+            height: 18rem;
+            width: 27rem;
+           margin-top:2rem;
+            position:relative;
+            border: 0.1rem solid rgba(212,222,226,0.31);
+            border-radius: 0.4rem;
+            background-color: #FFFFFF;
+            box-shadow: 0 11px 27px 0 rgba(116,119,120,0.09);
+            
+            button.viewUserBtn{
+              height: auto; 
+              padding:1.2rem;
+              width: 99%;
+              position:absolute;
+              bottom:0;
+              font-weight:normal !important;
+              cursor:pointer;
+              font-size:1.8rem;
+              border-radius: 0.4rem;
+              border: 1px solid #D4DEE2;
+              color:#000;
+              background: #F2F5F6;
+            }
+            h3{
+              text-align:center;
+              font-size:2.8rem;
+              font-weight:bold;
+              font-family:var(--default-font);
+              margin-top:3rem
+            }
+            h4{
+              text-align:center;
+              font-size:1.8rem;
+              margin-top:1rem;
+              font-weight:normal;
+              font-family:var(--default-font)
+            }
+        }
+      }
+        .progress-container{
+        margin-top:7rem;
+        .adminButton{
+          color:black !important;
+          border: 1px solid #D4DEE2 !important;
+          background-color: #F2F5F6 !important;
+          font-weight:600 !important;
+          font-size:1.3rem !important;
+        }
+        .progress-wrapper{
+          margin-top:3rem;
+          display:grid;
+          grid-template-columns:1fr;
+          grid-gap:.1rem;
+          
+        }
+        .infoTable{
+          width:100%;
+          margin-left:0;
+        }
+      }
+    }
+  
+  }
+  
+  

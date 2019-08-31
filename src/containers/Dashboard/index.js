@@ -6,6 +6,8 @@ import Upload from "../../components/mainContent/_adminUploadedTrack.js";
 import Activity from "../../components/mainContent/_adminUserActivity.js";
 import Royalties from "../../components/mainContent/_paidRoyalties";
 import Graphs from "./main/index";
+import Catalogue from "./catalogue/index";
+import UserActivity from "./users/index";
 
 import Burger from '../../components/Burger';
 
@@ -96,10 +98,13 @@ class DashBoardIndex extends Component {
 						<Router>
 						<Switch>
 						<Route exact path="/admin_transaction_history"  component={History}/>
-						<Route  component={Graphs} />
+						
 						<Route  path="/admin_users_activity"  component={Activity} />
 						<Route  path="/admin_paid_royalties"  component={Royalties} />
 						<Route  path="/admin_uploaded_tracks"  component={Upload} />
+						<Route  exact path="/catalogue"  component={Catalogue} />
+						<Route  exact path="/users"  component={UserActivity} />
+						<Route  component={Graphs} />
 					</Switch>
 					</Router>
 						</div>
