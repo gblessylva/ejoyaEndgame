@@ -17,7 +17,7 @@ class ChartIndex extends Component {
             <FaArrowRight />/
           </button>
     <div className="dashHeading">
-      <h2>Dashboard</h2>
+      <h2>Ejoya at a Glance</h2>
       <button className="adminButton">
         View Admin Users
       </button>
