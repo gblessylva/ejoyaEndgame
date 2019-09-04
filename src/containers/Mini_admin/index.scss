@@ -47,5 +47,123 @@
     }
     }
   }
+  .notif-form-wrapper{
+    border:1px solid #d8d8d8;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    @include respond (tab-port){
+      grid-template-columns:1fr;
+    }
+    
+    .controlled-form{
+      height:30rem;
+      border:1px solid #d8d8d8;
+      overflow:scroll;
+      padding:2rem;
+      font-size:1.4rem;
+  
+    }
+    .check-container {
+      display: block;
+      position: relative;
+      padding-left: 3.5rem;
+      margin-bottom: 1.2rem;
+      cursor: pointer;
+      font-size: 1.4rem;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .notif-form-control{
+      width:90%;
+      margin:2rem auto;
+      
+    }
+    
+    textarea{
+      width:90%;
+      height:20rem;
+      border: 1px solid #d8d8d8;
+      margin:0 auto;
+      resize:none;
+      padding:1rem;
+      border-radius:0.4rem;
+    }
+    .notif-form-text{
+      font-size:1.4rem;
+      margin:1rem 2rem;
+    }
+    select{
+      margin-top:1rem;
+      width:72%;
+    }
+    .form-btn{
+      padding:0.2rem 0;
+      height:5rem; 
+      width:90%;
+      font-size:1.6rem;
+      font-weight:bold; 
+      margin-top:1rem;
+      background:black;
+      color:white;
+      box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      border:none;
+    }
+
+    .check-container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    
+   
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2.5rem;
+      width: 2.5rem;
+      background-color: #eee;
+    }
+    
+  
+    .check-container:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+    
+  
+    .check-container input:checked ~ .checkmark {
+      background-color: #2196F3;
+    }
+    
+   
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    
+   
+    .check-container input:checked ~ .checkmark:after {
+      display: block;
+    }
+    
+  
+    .check-container .checkmark:after {
+      left: 0.9rem;
+      top: 0.5rem;
+      width: 0.5rem;
+      height: 1rem;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  
+    }
 
 }

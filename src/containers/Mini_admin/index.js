@@ -33,7 +33,7 @@ class MiniAdmin extends Component {
 						<img className="artist-image" src="/inspect/Rectangle 5.png" alt="artist-profile-pic" />
 						<p>Mini Admin</p>
 					</div>
-					<NavLink to={`${url}/artist/new-release`}>
+					<NavLink to="./create">
 						<button className="dashboard__release heading-6 font-weight--6">
 							<span className="music__icon" />
 							Create User
@@ -52,9 +52,9 @@ class MiniAdmin extends Component {
 							<span className="fans" />
 						Send Email
 						</NavLink>
-						<NavLink to={`${url}/artist/team-page`} className="heading-6-1 font-weight--5">
+						<NavLink exact to="../notify" className="heading-6-1 font-weight--5">
 							<span className="team" />
-							Send Notification
+							Send Notifications
 						</NavLink>
 						<NavLink to={`${url}/artist/wallet-page`} className="heading-6-1 font-weight--5">
 							<span className="wallet" />
@@ -83,9 +83,14 @@ class MiniAdmin extends Component {
 					}}
 				>
 					<div>
-						<Notify />
-						
-						</div>
+					<Router>
+					<Switch>
+					<Route component={Create} />
+					{/* <Route exact path="Mini_admin/notify" compoment={Notify} /> */}
+					</Switch>
+
+					</Router>
+					</div>
 				</section>
 			</main>
 			</div>
